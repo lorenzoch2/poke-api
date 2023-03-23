@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <Context.Provider value={globalState}>
-        <BrowserRouter>
+        <BrowserRouter basename="/poke-api">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
