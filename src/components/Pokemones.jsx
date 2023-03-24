@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useContext } from "react";
 import Context from "../Context";
 import { useNavigate, useParams } from "react-router-dom";
+import "../assets/css/pokemones.css"
 
 function Pokemones() {
   const [selectedPokemon, setSelectedPokemon] = useState('');
@@ -27,10 +28,10 @@ function Pokemones() {
 
   const imprimirEstadisticas = () => {
     const arreglo = stats.map((statPokemon, index) => (
-      <li key={index}>
+      <p className="container" key={index}>
         {statPokemon.stat.name}
         {":"} {statPokemon.base_stat}
-      </li>
+      </p>
     ));
 
     return arreglo;
@@ -41,21 +42,21 @@ function Pokemones() {
     const imprimirPokemon = pokemon.map((poke, index) => {
       return (
         <div key={index}>
-          <h1>{poke.name}</h1>
-          <img src={poke.img} alt={poke.name} />
+          <h2>{poke.name}</h2>
+          <img className="pokemon" src={poke.img} alt={poke.name} />
         </div>
       )
     })
     return imprimirPokemon
   }
 
-  console.log("pokemon seleccionado:",selectedPokemon);
+  /*console.log("pokemon seleccionado:",selectedPokemon);
   console.log("estadisticas:",stats);
   console.log("id:",id)
-  console.log("list:",list);
+  console.log("list:",list);*/
 
   return (
-    <div>
+    <div className="list">
       <h2>Selecciona un Pokemon:</h2>
       <select
         value={selectedPokemon}
@@ -70,15 +71,15 @@ function Pokemones() {
           </option>
         ))}
       </select>
-      <div>
+      <div className="button">
         <button onClick={handlePokemonSelect}>
           <h3>Ver detalles</h3>
         </button>
       </div>
       {id && (
-        <div>
+        <div className="details">
           {imprimirFoto(id)}
-          <ul>
+          <ul className="stats">
             {imprimirEstadisticas()}
           </ul>
         </div>

@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #58585a;
+    height: 30px;
+}
+
+img{
+    width: 15px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks{
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+a{
+    margin-right: 10px;
+}
+
+.inactive{
+    text-decoration: none;
+    color: white
+}
+
+.active{
+    text-decoration: none;
+}

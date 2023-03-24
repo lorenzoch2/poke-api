@@ -1,0 +1,21 @@
+.list{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.button{
+    margin: 10px;
+}
+
+.details{
+    display: flex;
+}
+
+.pokemon{
+    width: 200px;
+}
+
+.stats{
+    margin-top: 55px;
+}

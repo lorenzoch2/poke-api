@@ -1,0 +1,5 @@
+.home{
+    display: grid !important;
+    justify-content: center;
+    text-align: center;
+}
