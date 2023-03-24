@@ -1,5 +1,9 @@
 .home{
-    display: grid !important;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pikachu{
+    width: 200px;
 }
