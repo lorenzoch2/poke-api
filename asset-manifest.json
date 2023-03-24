@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/poke-api/static/css/main.fcc69001.css",
-    "main.js": "/poke-api/static/js/main.487deca5.js",
+    "main.css": "/poke-api/static/css/main.73c581c0.css",
+    "main.js": "/poke-api/static/js/main.c38cd35a.js",
     "index.html": "/poke-api/index.html",
-    "main.fcc69001.css.map": "/poke-api/static/css/main.fcc69001.css.map",
-    "main.487deca5.js.map": "/poke-api/static/js/main.487deca5.js.map"
+    "main.73c581c0.css.map": "/poke-api/static/css/main.73c581c0.css.map",
+    "main.c38cd35a.js.map": "/poke-api/static/js/main.c38cd35a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcc69001.css",
-    "static/js/main.487deca5.js"
+    "static/css/main.73c581c0.css",
+    "static/js/main.c38cd35a.js"
   ]
 }
